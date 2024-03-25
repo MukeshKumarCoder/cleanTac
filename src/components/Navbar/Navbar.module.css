@@ -1,0 +1,37 @@
+.navContainer {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.navBox {
+    padding: 0 1rem;
+}
+
+.navLogo>img {
+    width: 186px;
+    cursor: pointer;
+}
+
+.navBox>ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navBox>ul>li>.navList {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1px;
+    transition: all 0.3s ease-in;
+}
+
+.navBox>ul>li>.navList:hover {
+    color: var(--secondary-color);
+}
+
+.active {
+    color: var(--secondary-color);
+}
