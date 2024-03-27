@@ -1,0 +1,19 @@
+.btn{
+    width: fit-content;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 0.8rem;
+    padding: 1rem 1.5rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover{
+    background-color: var(--white);
+    color: var(--secondary-color);
+}
