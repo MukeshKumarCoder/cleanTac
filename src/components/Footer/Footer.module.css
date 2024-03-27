@@ -1,0 +1,88 @@
+.footerContainer {
+    background-image: url(../../assets/footerImg.jpeg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding: 3.5rem 0;
+}
+
+.socialMediaIcons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.sicialIcon {
+    font-size: 2.5rem;
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+
+.sicialIcon:hover {
+    color: var(--secondary-color);
+}
+
+.hrLine {
+    display: flex;
+    margin: 3rem 0;
+    opacity: 0.2;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.innerBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.innerBox>h3 {
+    font-size: 1.5rem;
+}
+
+.innerBox>.links {
+    color: var(--lavender-blue);
+    text-decoration: none;
+    position: relative;
+}
+
+.innerBox>.links::after {
+    content: "";
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 0.5px;
+    position: absolute;
+    background-color: var(--white);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+}
+
+.innerBox > .links:hover::after{
+    transform: scale(1);
+}
+
+.innerBox>input {
+    background-color: var(--blue-one);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 3rem;
+    padding: 11px 22px;
+    outline: none;
+}
+
+.innerBox>input::placeholder {
+    color: var(--lavender-blue);
+    opacity: 0.5;
+}

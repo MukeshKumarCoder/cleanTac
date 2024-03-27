@@ -1,0 +1,33 @@
+.subfoorteBOx {
+    background-color: var(--blue-five);
+
+}
+
+.innerBox {
+    padding: 1.5rem 0;
+    color: var(--white);
+}
+
+.links {
+    color: var(--lavender-blue);
+    text-decoration: none;
+    position: relative;
+}
+
+.links::after {
+    content: "";
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    position: absolute;
+    background-color: var(--white);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+}
+
+.links:hover::after {
+    transform: scale(1);
+}
